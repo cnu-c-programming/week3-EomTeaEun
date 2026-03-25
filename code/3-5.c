@@ -10,7 +10,7 @@ void my_sum(char type, int count, ...) {
     for (int i = 0; i < count; i++) {
         if (type == 'S') {
             char* s = va_arg(args, char*);
-            printf("%s ", s);
+            printf("%s", s);
         } 
         else if (type == 'C') {
             char c = (char)va_arg(args, int);
